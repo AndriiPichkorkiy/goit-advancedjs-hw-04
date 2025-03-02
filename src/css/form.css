@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+body,
+p,
+.form input,
+.form select,
+.form textarea,
+.form button {
+  font-family: sans-serif;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+}
+
+div,
+p {
+  /* color: #babecc; */
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: 600px;
+  padding: 16px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+}
+
+.form input {
+  background-color: #fff;
+  width: 100%;
+  height: 40px;
+  padding: 16px;
+  padding-left: 15px;
+  border: 1px solid #303030;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 16px;
+}
+
+.form label {
+  min-height: 120px;
+  padding: 15px;
+  border: 1px solid #303030;
+  border-radius: 16px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.form button[type='submit'] {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #303030;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+  transition: transform 250ms linear;
+  background-color: #fff;
+}
+
+.form button[type='submit']:hover,
+.form button[type='submit']:focus {
+  transform: scale(1.05);
+}
