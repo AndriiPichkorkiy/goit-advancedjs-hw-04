@@ -5,7 +5,7 @@ const baseURL = 'https://pixabay.com/api/';
 
 const instance = axios.create({
   baseURL,
-  timeout: 1000,
+  timeout: 15000,
   params: { key },
 });
 
