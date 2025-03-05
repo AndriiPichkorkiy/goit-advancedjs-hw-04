@@ -21,11 +21,6 @@
   animation-fill-mode: forwards;
 }
 
-.gallery-item:last-child {
-  opacity: 0;
-  height: auto;
-}
-
 @keyframes gallery-item-show {
   0% {
     transform: scale(0);
@@ -68,4 +63,9 @@
 
 .description-value {
   font-size: 12px;
+}
+
+.pagination {
+  padding: 16px;
+  height: 80px;
 }

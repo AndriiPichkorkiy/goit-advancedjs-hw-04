@@ -38,7 +38,7 @@ function renderGallery(hits) {
     })
     .join('');
 
-  gallery.innerHTML = markup + '<li class="gallery-item">';
+  gallery.insertAdjacentHTML('beforeend', markup);
 
   lightBox.refresh();
 }
